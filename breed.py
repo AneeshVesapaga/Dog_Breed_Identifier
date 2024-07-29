@@ -10,6 +10,9 @@ try:
     st.success('cv2 imported successfully.')
 except ImportError as e:
     st.error(f'Error importing cv2: {e}')
+    st.error('Please ensure that the OpenCV dependencies are installed. On a Debian-based system, you can run the following command:')
+    st.code('sudo apt-get update && sudo apt-get install -y libgl1-mesa-glx')
+    st.stop()
 
 # Display title
 st.title('Dog Breed Classification App')
