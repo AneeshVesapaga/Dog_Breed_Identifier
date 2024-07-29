@@ -15,7 +15,7 @@ image_path = 'ino_img.jpg'  # Replace with your actual image file path
 st.image(image_path, caption='Example Image')
 
 # Load the pre-trained model
-model_path = r"lr.pkl"
+model_path = "lr.pkl"
 try:
     model = joblib.load(model_path)
     st.success('Model loaded successfully.')
