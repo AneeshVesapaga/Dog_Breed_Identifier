@@ -11,7 +11,7 @@ image_path = 'ino_img.jpg'  # Replace with your actual PNG image file path
 st.image(image_path, caption='ino_img.jpg')
 
 # Load the pre-trained model
-model_path = r"D:\Elite 20\Dog_breed\dataset\Yorkshire_Terrier\lr.pkl"
+model_path = r"lr.pkl"
 model = joblib.load(model_path)
 
 # Function to preprocess the image
