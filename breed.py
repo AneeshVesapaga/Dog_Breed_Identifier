@@ -2,7 +2,13 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import joblib
-import cv2
+
+# Attempt to import cv2 and handle potential import errors
+try:
+    import cv2
+    st.success('cv2 imported successfully.')
+except ImportError as e:
+    st.error(f'Error importing cv2: {e}')
 
 # Display title
 st.title('Dog Breed Classification App')
@@ -68,4 +74,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
