@@ -16,7 +16,7 @@ st.title('Dog Breed Classification App')
 
 # Display an example image
 image_path = 'ino_img.jpg'  # Replace with your actual image file path
-st.image(image_path, caption='Example Image', use_column_width=True)
+st.image(image_path, caption='Example Image')
 
 # Load the pre-trained model
 model_path = r"lr.pkl"
